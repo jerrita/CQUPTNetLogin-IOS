@@ -11,14 +11,28 @@
 		E353A673291267260000DCDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A672291267260000DCDA /* ContentView.swift */; };
 		E353A675291267270000DCDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E353A674291267270000DCDA /* Assets.xcassets */; };
 		E353A678291267270000DCDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E353A677291267270000DCDA /* Preview Assets.xcassets */; };
+		E353A67F291269CA0000DCDA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A67E291269CA0000DCDA /* LoginView.swift */; };
+		E353A68229126A940000DCDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353A68129126A940000DCDA /* User.swift */; };
+		E3C7C3102914A38600F8A98B /* MakeToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7C30F2914A38600F8A98B /* MakeToast.swift */; };
+		E3EF18AC2913F0FB00D9D73D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF18AB2913F0FB00D9D73D /* ModelData.swift */; };
+		E3EF18AE2913F1C900D9D73D /* base.json in Resources */ = {isa = PBXBuildFile; fileRef = E3EF18AD2913F1C900D9D73D /* base.json */; };
+		E3EF18BA2913FA8C00D9D73D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = E3EF18B92913FA8C00D9D73D /* Toast */; };
+		E3EF18BC2913FDFF00D9D73D /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF18BB2913FDFF00D9D73D /* Logic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3106D3A2914B6ED002EF5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E353A66D291267260000DCDA /* CQUPTLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CQUPTLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E353A670291267260000DCDA /* CQUPTLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQUPTLoginApp.swift; sourceTree = "<group>"; };
 		E353A672291267260000DCDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E353A674291267270000DCDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E353A677291267270000DCDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E353A67E291269CA0000DCDA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E353A68129126A940000DCDA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3C7C30F2914A38600F8A98B /* MakeToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeToast.swift; sourceTree = "<group>"; };
+		E3EF18AB2913F0FB00D9D73D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E3EF18AD2913F1C900D9D73D /* base.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = base.json; sourceTree = "<group>"; };
+		E3EF18BB2913FDFF00D9D73D /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EF18BA2913FA8C00D9D73D /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +66,11 @@
 		E353A66F291267260000DCDA /* CQUPTLogin */ = {
 			isa = PBXGroup;
 			children = (
+				E3106D3A2914B6ED002EF5F7 /* Info.plist */,
 				E353A670291267260000DCDA /* CQUPTLoginApp.swift */,
-				E353A672291267260000DCDA /* ContentView.swift */,
+				E3EF18AF2913F1CC00D9D73D /* Resources */,
+				E353A68329126A9C0000DCDA /* Model */,
+				E353A680291269D40000DCDA /* View */,
 				E353A674291267270000DCDA /* Assets.xcassets */,
 				E353A676291267270000DCDA /* Preview Content */,
 			);
@@ -65,6 +83,34 @@
 				E353A677291267270000DCDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E353A680291269D40000DCDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E353A672291267260000DCDA /* ContentView.swift */,
+				E353A67E291269CA0000DCDA /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E353A68329126A9C0000DCDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E353A68129126A940000DCDA /* User.swift */,
+				E3EF18BB2913FDFF00D9D73D /* Logic.swift */,
+				E3C7C30F2914A38600F8A98B /* MakeToast.swift */,
+				E3EF18AB2913F0FB00D9D73D /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3EF18AF2913F1CC00D9D73D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3EF18AD2913F1C900D9D73D /* base.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = CQUPTLogin;
+			packageProductDependencies = (
+				E3EF18B92913FA8C00D9D73D /* Toast */,
+			);
 			productName = CQUPTLogin;
 			productReference = E353A66D291267260000DCDA /* CQUPTLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = E353A664291267260000DCDA;
+			packageReferences = (
+				E3EF18B82913FA8C00D9D73D /* XCRemoteSwiftPackageReference "toast-swift" */,
+			);
 			productRefGroup = E353A66E291267260000DCDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EF18AE2913F1C900D9D73D /* base.json in Resources */,
 				E353A678291267270000DCDA /* Preview Assets.xcassets in Resources */,
 				E353A675291267270000DCDA /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E353A68229126A940000DCDA /* User.swift in Sources */,
+				E353A67F291269CA0000DCDA /* LoginView.swift in Sources */,
+				E3C7C3102914A38600F8A98B /* MakeToast.swift in Sources */,
+				E3EF18AC2913F0FB00D9D73D /* ModelData.swift in Sources */,
 				E353A673291267260000DCDA /* ContentView.swift in Sources */,
+				E3EF18BC2913FDFF00D9D73D /* Logic.swift in Sources */,
 				E353A671291267260000DCDA /* CQUPTLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +328,7 @@
 				DEVELOPMENT_TEAM = 9W3GUYSL3Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CQUPTLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +358,7 @@
 				DEVELOPMENT_TEAM = 9W3GUYSL3Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CQUPTLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3EF18B82913FA8C00D9D73D /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3EF18B92913FA8C00D9D73D /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3EF18B82913FA8C00D9D73D /* XCRemoteSwiftPackageReference "toast-swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E353A665291267260000DCDA /* Project object */;
 }
